@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>My Page</title>
+    <style> 
+      #banner{
+        width:100%;
+        height:370px;
+
+       object-fit: cover;
+
+      }
+    </style>
+  
+  </head>
+  
+  <body>
+    <div class = ".container">
+    <h1 class="text-center mt-4 mb-4"> JOB PORTAL</h1>
+    <img class ="img-fluid" id ="banner" src="https://add94fe5-c129-4c3d-92c8-2b7ff64e8107-00-3wgdt6xbhkyj.pike.replit.dev/static/job.jpeg">
+    
+      
+    <h2  class="text-center" mt-5 mb-4>About Jobs</h2>
+   
+    <p>Artificial intelligence, a rapidly evolving technology, has the potential to revolutionize various aspects of our lives. It can help automate tasks, enhance communication, and improve decision-making processes. This cutting-edge technology has the power to bring about significant advancements in numerous fields, from healthcare and education to transportation and finance. However, it is of utmost importance that we design AI systems with utmost care, respect, and truth in mind, ensuring that they promote fairness and positivity for all users. By doing so, we can harness the full potential of AI to create a better, more connected, and efficient world for everyone.</p>
+     <h2 class="text-center">OPEN POSITIONS</h2>
+    <h3 class="text-center">JOB OPENINGS</h3>
+    <p>
+      {%for job in jobs%}
+        {% include 'template.html' %}
+      {% endfor %}
+    </p>
+      <div class="text-center">  
+        <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
+        <p class= "mt-4">Copyright 2024@rights,Abhisek</p>
+      </div>
+  </body>
+</div>   
+</html>
